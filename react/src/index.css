@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+footer {
+  @apply bg-gray-800 text-white text-center py-4 sticky bottom-0;
+  background: linear-gradient(
+    90deg,
+    rgb(238, 222, 253) 0%,
+    rgb(185, 148, 245) 35%,
+    rgb(255, 212, 246) 100%
+  );
+}
+
+
+html {
+  height: auto;
+  margin: 0;
+  background: rgb(138, 134, 204);
+  background: linear-gradient(
+    90deg,
+    rgb(238, 222, 253) 0%,
+    rgb(185, 148, 245) 35%,
+    rgb(255, 212, 246) 100%
+  );
+}
+@media screen and (min-width: 650px) {
+  html {
+    height: auto;
+    background: rgb(138, 134, 204);
+    background: linear-gradient(
+      90deg,
+      rgb(229, 227, 255) 0%,
+      rgb(175, 132, 243) 35%,
+      rgb(255, 212, 246) 100%
+    );
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    height: auto;
+    background: rgb(138, 134, 204);
+    background: linear-gradient(
+      90deg,
+      rgb(229, 227, 255) 0%,
+      rgb(175, 137, 236) 35%,
+      rgb(255, 212, 246) 100%
+    );
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    height: auto;
+    background: rgb(138, 134, 204);
+    background: linear-gradient(
+      90deg,
+      rgb(229, 227, 255) 0%,
+      rgb(175, 135, 240) 35%,
+      rgb(255, 212, 246) 100%
+    );
+  }
+}
+

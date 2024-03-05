@@ -1,0 +1,58 @@
+.body {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 650px) {
+  .body {
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .body {
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .body {
+
+    height: fit-content;
+ 
+  }
+}
+
+/* App.css */
+
+/* Container for the entire app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes up at least the full viewport height */
+}
+
+/* Styling for the Navbar */
+/* Customize this section to match your desired Navbar style */
+.navbar {
+  background-color: #35495e;
+  color: #ffffff;
+  padding: 1rem;
+  /* Add more styles as needed */
+}
+
+/* Styling for the main content area */
+.app-content {
+  flex-grow: 1; /* Expand to fill available space */
+  padding: 1rem;
+  /* Add more styles as needed */
+}
+
+/* Styling for the Footer */
+/* Customize this section to match your desired Footer style */
+.footer {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  text-align: center;
+  /* Add more styles as needed */
+}
+ 

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /private/     # Disallow indexing of private directories
+Disallow: /admin/      # Disallow indexing of admin pages
+Disallow: /login/      # Disallow indexing of login pages
+Disallow: /logout/     # Disallow indexing of logout pages
+
+# Allow indexing of everything else
+Allow: /

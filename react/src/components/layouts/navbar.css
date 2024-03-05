@@ -1,0 +1,11 @@
+.nav-bg {
+    height: auto;
+    margin: 0;
+    background: rgb(138, 134, 204);
+    background: linear-gradient(
+      90deg,
+      rgb(238, 222, 253) 0%,
+      rgb(185, 148, 245) 35%,
+      rgb(255, 212, 246) 100%
+    );
+}
