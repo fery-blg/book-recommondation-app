@@ -8,6 +8,7 @@ const Profile = lazy(() => import("../user/ProfileIndex"));
 const Home = lazy(() => import("../home/Home"));
 const Admin = lazy(() => import("../admin/AdminIndex"));
 const AddBook = lazy(() => import("../Books/Addbook"));
+const BookList = lazy(() => import("../Books/BookList"));
 
 function Body() {
   return (
@@ -34,6 +35,14 @@ function Body() {
           element={
             <Suspense fallback={<LoadingFallback />}>
               <Admin />
+            </Suspense>
+          }
+        />
+         <Route
+          path="/bookList/bookList"
+          element={
+            <Suspense fallback={<LoadingFallback />}>
+              <BookList/>
             </Suspense>
           }
         />

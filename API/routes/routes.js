@@ -3,6 +3,7 @@
     const userRoute = require('./user.route');
     const adminRoute = require('./admin.route');
     const Middleware = require('../middleware');
+const publicRoute = require('./public.route');
     
     class Routes  {
     static #router = express.Router();
@@ -11,6 +12,9 @@
         this.#router.use('/auth', authRoutes);
         this.#router.use('/user', Middleware.checkAuth, userRoute);
         this.#router.use('/admin', Middleware.checkAuth, Middleware.checkAdmin, adminRoute);
+        this.#router.use('/books', publicRoute);
+
+        
     }
 
     static getRouter() {
